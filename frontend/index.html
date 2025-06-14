@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Degradado test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/frontend/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assest/logo.png" alt="" width="60" height="60">
+        JCoplinTech
+      </a>
+      <ul class="nav justify-content-end" id="nav-content">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sobre | </a></li>
+    
+        <a href="#" class="cart-icon" onclick="OpenCart()">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      </ul>
+      </div>
+        </nav>
+
+        <div id="side-cart" class="side-cart">
+          <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <button class="btn" onclick="CloseCart()">&times;</button>
+           
+          </div>
+
+          <div class="cart-body" id="cart-items">
+  
+            <p>Tu carrito está vacío.</p>
+
+    </div>
+                <div class="trash-container" onclick="DeleteAllItems()">
+                 <i class="fa-solid fa-trash" id="btn-trash"></i>
+                 <p class="text-trash">Eliminar todo</p>
+                 </div>
+        </div>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">JCoplinTech</h1>
+        </div>
+        </div>
+
+        <div class="buy-now">
+                <button class="btn btn-primary" id="buy-now" onclick="OpenModal('Ajazz Aj159 Apex', '/assest/mouse-1.png', 'The Ajazz Aj159 Apex Mouse is a high-performance gaming mouse designed for precision and comfort. It features customizable RGB lighting, multiple programmable buttons, and an ergonomic design for extended gaming sessions.','Price: $69.99')">Comprar Ahora</button>
+        </div>
+        </div>
+
+        <div class="img-container">
+        <img src="/assest/mouse-1.png"  title="Darle click" onclick="changeimage()" id="mouse-image">
+        </div>
+
+        <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Teclados</h1>
+        </div>
+        </div>
+        </div>
+
+        <div class="img-container-2" >
+        <img src="/assest/mizar-1.png" onclick="OpenModal('Mizar Keyboard', '/assest/mizar-1.png', 'The Mizar Keyboard is a mechanical keyboard known for its tactile feedback and customizable RGB lighting. It features programmable keys and a durable design, making it ideal for gamers and typists alike.', 'Price: $89.99')" id="mizar-1">
+
+
+        <img src="/assest/magegee-1.png" id="magegee-1" onclick="OpenModal('MageGee Keyboard', '/assest/magegee-1.png', 'The MageGee Keyboard is a versatile mechanical keyboard with a sleek design and customizable RGB backlighting. It offers a comfortable typing experience with its ergonomic layout and responsive keys.', 'Price: $79.99')">
+        </div>
+
+        <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Monitores</h1>
+
+            </div>
+        <div class="img-container-3">
+        <img src="/assest/Titan-army.png" id="titan-army" onclick="OpenModal('Titan Army Monitor', '/assest/Titan-army.png', 'The Titan Army Monitor is a high-resolution display designed for gamers and professionals. It features a fast refresh rate, vibrant colors, and multiple connectivity options for an immersive viewing experience.', 'Price: $299.99')">
+        <img src="/assest/acer.png" id="acer-1" onclick="OpenModal('Acer Monitor', '/assest/acer.png', 'The Acer Monitor is a versatile display known for its sharp image quality and wide viewing angles. It is suitable for both gaming and professional use, offering various screen sizes and resolutions.', 'Price: $249.99')">
+        <img src="/assest/infievo.png" id="infievo" onclick="OpenModal('Infievo Monitor', '/assest/infievo.png', 'The Infievo Monitor is a budget-friendly display that offers decent performance for everyday tasks. /n  It features a slim design and is suitable for casual gaming and office work.', 'Price: $199.99')">
+        </div>
+
+
+<div id="product-modal" class="Modal">
+  <div class="Modal-content">
+    <div class="modal-main">
+    <img src="" id="modal-image" alt="Product Image">
+    <h2 id="modal-title">Producto</h2>
+    </div>
+    <div class="modal-description">
+    <p id="modal-description"></p>
+    <p id="modal-price">Precio:</p>
+    <div class="modal-buttons">
+      <button class="btn btn-primary" id="close-modal" onclick="CloseModal()">Cerrar</button>
+      <button class="btn btn-success" id="add-to-cart" onclick="AddToCart()">Añadir al Carrito</button>
+    </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="/frontend/Js/script.js"></script>
+</html>
