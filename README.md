@@ -19,4 +19,6 @@ Si desea agregar algun producto, tienes la opcion de agregarlo al carrito:
 
 ![image](https://github.com/user-attachments/assets/c336ccd1-79a3-480b-8791-eef781e09b21)
 
-Proximamente estaria haciendo un update para agregar nuevas funcionalidades
+Se ha agregado el localstorage a la pagina.
+
+Proximamente estaria haciendo un update para agregar nuevas funcionalidades como completar la parte de articulos.
